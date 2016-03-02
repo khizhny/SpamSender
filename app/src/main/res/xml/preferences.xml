@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory 
+        android:title="Common settings">
+		<EditTextPreference
+		                android:key="csv_file_path"
+		                android:title="Path to TXT file on SD card"
+		                android:defaultValue="/storage/sdcard1/emails.txt"
+		                android:summary="file must have (tab separated) email,subject,body"
+		                android:dialogTitle="" />
+		<EditTextPreference
+		                android:key="userName"
+		                android:title="SMTP user name"
+		                android:defaultValue="khizhny.tester@gmail.com"
+		                android:summary="eg. ivanov@gmail.com"
+		                android:dialogTitle="" />
+        <EditTextPreference
+		                android:key="password"
+		                android:title="SMTP user password"
+		                android:defaultValue="khizhny.tester1"
+		                android:dialogTitle="" />
+
+        <EditTextPreference
+		                android:key="smtpServer"
+		                android:title="SMTP server"
+		                android:defaultValue="smtp.gmail.com"
+		                android:summary=""
+		                android:dialogTitle="eg. smtp.gmail.com" />
+
+        <EditTextPreference
+		                android:key="smtpPort"
+		                android:title="SMTP server port"
+		                android:defaultValue="465"
+		                android:summary="SMTP server port"
+		                android:dialogTitle="eg. 465 or 25" />
+        <EditTextPreference
+		                android:key="sender"
+		                android:title="E-Mail sender"
+		                android:defaultValue="khizhny.tester@gmail.com"
+		                android:dialogTitle="eg. ivanov@gmail.com" />
+        <EditTextPreference
+		                android:key="attachmentPath"
+		                android:title="Path to attachment"
+		                android:defaultValue="/storage/sdcard1/info.txt"
+		                android:summary="file to be send"
+		                android:dialogTitle="" />
+        <EditTextPreference
+		                android:key="blockSize"
+		                android:title="Size of block"
+		                android:defaultValue="2"
+		                android:numeric="integer"
+    					android:maxLength="2"
+		                android:summary="Number of messages to be send once"
+		                android:dialogTitle="" />
+        <EditTextPreference
+		                android:key="blockSendDelay"
+		                android:title="Block sending delay"
+		                android:defaultValue="5"
+		                android:numeric="integer"
+    					android:maxLength="100"
+		                android:summary="Delay between sendings"
+		                android:dialogTitle="" />
+        </PreferenceCategory>
+</PreferenceScreen>

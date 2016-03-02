@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SpamSender</string>
+    <string name="hello_world">Visit https://www.google.com/settings/security/lesssecureapps if not working with your account.</string>
+    <string name="action_settings">Settings</string>
+</resources>
